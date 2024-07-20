@@ -11,6 +11,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
+ALLOWED_HOSTS = ['jeros-production.up.railway.app']  # En producción, cambia '*' por tu dominio o IP específica
+
+
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'jeros-production.up.railway.app').split(',')
 
 # Application definition
